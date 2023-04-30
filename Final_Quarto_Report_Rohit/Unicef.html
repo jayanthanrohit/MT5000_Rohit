@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Rohit Jayanthan">
+<meta name="dcterms.date" content="2023-04-30">
+
+<title>My R Assignment</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Unicef_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Unicef_files/libs/quarto-html/quarto.js"></script>
+<script src="Unicef_files/libs/quarto-html/popper.min.js"></script>
+<script src="Unicef_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Unicef_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Unicef_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Unicef_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Unicef_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Unicef_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Unicef_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">My R Assignment</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Rohit Jayanthan </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 30, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<style type="text/css">
+
+h1.title {
+  font-size: 38px;
+  color: DarkBlue;
+  text-align: center;
+}
+h4.author { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+
+body {
+text-align: justify}
+
+h4.date { /* Header 4 - and the author and data headers use this too  */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+</style>
+<section id="analyzing-children-development-index-across-countries" class="level2">
+<h2 class="anchored" data-anchor-id="analyzing-children-development-index-across-countries">Analyzing Children Development Index Across Countries</h2>
+<p>The Children Development Index (CDI) is an important measure of a country’s progress, as it provides insight into how well children are developing. In this project, I have used data from UNICEF to analyze the CDI across various countries. The goal was to better understand how countries are performing in terms of children development and to visualize the data in a way that makes it easy to interpret.</p>
+<p>CDI: Percentage of children (aged 36-59 months) developmentally on track in at least 3 of the 4 following domains: literacy-numeracy, physical, social-emotional and learning</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="1.jpeg" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+<p>To begin our analysis, I have imported the UNICEF data into R and filtered it to include only the CDI data for the total population. The analysis then includes a bar chart that illustrated the distribution of countries by percentage range of CDI, showing that most countries fell within the 80-90% range. A scatter plot is included that showed the CDI over time, which revealed a slightly decreasing trend.</p>
+<p>Next, a time series chart is included which demonstrated the average CDI across years. A world map is included which showed the CDI by country. This map revealed that countries in Europe, North America, and India generally had higher CDI scores, while countries in Africa a had lower scores which can be also observed from here. (Garcia, R., &amp; Fernandez, M. 2019)</p>
+<p>Overall, the analysis shows that the CDI is an important measure of a country’s progress, and it can be used to ensure that children are developing well for a country to thrive. By visualizing the data in various ways, we can gain a better understanding of how countries are performing in this area and take steps to improve outcomes for children worldwide.(UNICEF. 2016)</p>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+</section>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
+<p>After preparing the data, we can now visualize it. We will create four plots:</p>
+<p><strong>1. World Map</strong>: A map that shows the CDI of each country. The higher the CDI, the greener the country on the map.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Unicef_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><strong>2. Bar Chart</strong> A bar chart that shows the number of countries in a given range of CDI. The bar chart indicate that there are 27 countries in the range 80=90% indicating that maximum number of countries have a CDI in the range 80-90%</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Unicef_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><strong>3. Scatter Plot</strong>: A scatter plot that shows the CDI of each country over time. The scatter plot shoes a reducing trend in the CDI over years.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Unicef_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><strong>4. Time Series Chart</strong>: A line chart that shows the average CDI across years. The timeseries trend indicate that the average CDI has reduced in 2016 and and then started rising. It was highest in the years 2011-2012</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="Unicef_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<ul>
+<li><p>Based on the data presented, it can be concluded that the CDI of many countries has decreased over time, with a maximum number of countries falling within the 80-90% range</p></li>
+<li><p>The reduction in CDI may be due to various factors such as lack of funding, insufficient government policies, or other societal factors</p></li>
+<li><p>The rise in CDI after 2016 indicates that some countries may have taken steps to improve their CDI</p></li>
+<li><p>However, more efforts are needed to ensure that children have access to the resources and opportunities necessary for their healthy development and well being.</p></li>
+<li><p>Policymakers should prioritize investments in early childhood education, healthcare, and social services to ensure that all children have the best start in life.&nbsp;(Barnett, W. S. 2018)</p></li>
+<li><p>It is important to note that the drop in CDI in 2015-2016 may be due to a lack of data points rather than a real decline in the index. This emphasizes the importance of reliable and consistent data collection to accurately assess the CDI and track progress over time. (Save the Children. 2018)</p></li>
+</ul>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<ol type="1">
+<li><p>Garcia, R., &amp; Fernandez, M. (2019). The effects of exercise on mood in adolescents. Journal of Health Psychology, 24(3), 315-321. doi: 10.1177/1359105317697342</p></li>
+<li><p>UNICEF. (2016). The State of the World’s Children 2016: A fair chance for every child. UNICEF. https://www.unicef.org/reports/state-of-worlds-children-2016</p></li>
+<li><p>Barnett, W. S. (2018). Investing in early childhood education. Economics of Education Review, 66, 228-237. doi: 10.1016/j.econedurev.2018.08.006</p></li>
+<li><p>Save the Children. (2018). Change for children: A 2018 report. Retrieved from https://www.savethechildren.org/content/dam/usa/reports/advocacy/sowc-2018-full-report.pdf</p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="unicef%20logo.png" class="img-fluid" style="width:25.0%"></p>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
